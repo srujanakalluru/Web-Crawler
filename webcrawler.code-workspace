@@ -1,0 +1,38 @@
+{
+    "folders": [
+        {
+            "name": "WebCrawler Root",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            ".gradle": true,
+        },
+        "editor.rulers": [120],
+        "terminal.integrated.scrollback": 10000,
+        "java.completion.overwrite" : false,
+        "[java]": {
+            "editor.defaultFormatter": "redhat.java",
+            "editor.tabSize": 4
+        },
+        "editor.detectIndentation": false,
+        "java.sources.organizeImports.starThreshold": 200,
+        "java.sources.organizeImports.staticStarThreshold": 200,
+        "java.format.settings.url": "./.settings/eclipse-style.xml",
+        "java.format.settings.profile": "WebCrawler",
+        "java.format.onType.enabled": false,
+        "java.test.config": [
+            {
+                "name": "TestsConfig",
+                "workingDirectory": "${workspaceFolder}",
+                "vmargs": ["-Xmx512M"],
+                "args": [],
+                "env": {}
+            }
+        ],
+        "java.test.defaultConfig": "TestsConfig",
+        "java.configuration.updateBuildConfiguration": "interactive",
+        "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -javaagent:\"/home/gitpod/.vscode-remote/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\""
+    }
+}
